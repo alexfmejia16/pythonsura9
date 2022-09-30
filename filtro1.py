@@ -2,8 +2,8 @@ import pandas as pd
 
 tablaMunicipios=pd.read_csv('./Siembras.csv')
 
-datosBarbosa=tablaMunicipios[tablaMunicipios["Ciudad"]=="Barbosa"]
-print(datosBarbosa)
+datosAndes=tablaMunicipios[tablaMunicipios["Ciudad"]=="Andes"]
+print(datosAndes)
 
 '''archivoHTML=datosBarbosa.to_html()
 archivoTEXTO=open("datosBarbosa.html","w",encoding="utf-8")

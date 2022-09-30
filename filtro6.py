@@ -2,5 +2,8 @@ import pandas as pd
 
 tablaMunicipios=pd.read_csv('./Siembras.csv')
 
-datosBarbosa=tablaMunicipios[tablaMunicipios["Ciudad"]=="Barbosa"]
-print(datosBarbosa)
+datosMedellin=tablaMunicipios[tablaMunicipios["Ciudad"]=="Medellín"]
+datosordenados=datosMedellin.sort_values(by="Arboles")
+
+
+print(datosordenados)
